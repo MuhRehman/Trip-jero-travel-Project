@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trip Jero</title>
+  </head>
+  <body>
+     <div class="container-flusd">
+
+   
+         <nav class="navbar navbar-expand-lg navbar-custom-bg bg-sidebar ">
+          <div class="navbar-left-area">
+            <span class="navbar-left ">
+        <a href="#">      <i class="fa fa-twitter " aria-hidden="true"></i></a>
+        <a href="#">              <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-facebook pl-2 pr-2" aria-hidden="true"></i>
+        </a>
+
+
+
+
+              <img class="ml-2" src="img/Group 3.png" alt="">
+              </span>
+          </div>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="input-area">
+        
+            <input type="text" id="date" class="form-control my-icon" placeholder="Enter Destination for your Trip">
+            
+          <!-- <div class="input-group ">
+            <input type="text" class="form-control custom-inputs  w-100" placeholder="Enter Destination for your Trip">
+            <div class="input-group-append bg-white">
+                <div type="button" class="search-icon ">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div> -->
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PKR
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ERO</a>
+                <a class="dropdown-item" href="#">INR</a>
+                <a class="dropdown-item" href="#">USD</a>
+              
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TRIPS </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">DEALS </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">DESTINATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OPERATORS</a>
+            </li>
+          </ul>
+        
+        </div>
+        <div class="navbar-right-area">
+            <span class="navbar-right">
+                MUDDASSAR HASEEB <img src="img/Group 739.png" alt="">
+              </span>
+          </div>
+      </nav>
+    </div> 
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-sidebar " id="sidebar-wrapper">
+     
+          <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-sidebar bg-light  text-right"><i class="fa fa-user mr-2"></i>PROFILE</a>
+            <a href="MY-FAVOUR-TRIPS.html" class="list-group-item list-group-item-action bg-sidebar  text-right bg-light"><i class="fa fa-heart-o" aria-hidden="true"></i>  MY FAVOUR TRIPS</a>
+            <a href="#" class="list-group-item list-group-item-action bg-sidebar  text-right bg-light"> <i class="fa fa-bus mr-2"></i>MY BOOKINGS</a>
+            <a href="#" class="list-group-item list-group-item-action bg-sidebar  text-right bg-light"> <i class="fa fa-pencil" aria-hidden="true"></i>  COMPLAINTS</a>
+            <a href="#" class="list-group-item list-group-item-action bg-sidebar  text-right bg-light"> <i class="fa fa-cog" aria-hidden="true"></i> SETTINGS</a>
+    
+          </div>
+          <div href="#" class="ml-5 mt-5 logout-btn  bg-light"> 
+            <i class="fa fa-power-off" aria-hidden="true"></i>            LOGOUT</div>
+
+        </div>
+        
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        
+          <div class="container-fluid">
+
+           
+              <div class="item active">
+                <p class="mb-4">MY FAVOUR TRIPS</h6>
+                  <div class="row">
+                  <div class="col-md-10">
+                    <div class="main-card shadow  mb-5  rounded">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                 <div class="">
+                                  <div class="d-flex justify-content-between">
+                                      <div class="img">
+                                        <a href="#" class="">
+                                            <img src="img/profile-img/D.png" class="media-object media-object-image m-2" alt="Sample Image">
+                                        </a>
+                                     
+                                        </div>
+                                      
+                                   
+                                        <div class="media-body">
+                                            <h4 class="media-heading mt-3">Faisal Mosque Tour for 10 Peoples</h4>
+                                            <div class="media">
+                                                <img src="img/profile-img/Outline.png" class="host-img mr-1" alt="...">
+                                                <div class="media-body">
+                                                  <span class="host-name">Host: Usman Farrukh</p>
+                                                   
+                                                </div>
+                                              </div>
+                                              <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                         <span>4.5</span>
+                                            
+                                                         <div class="locations-time">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/cc.png" class="host-img mr-2" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-2">September <span>25th,</span> 2020</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5">
+                                                              <img src="img/profile-img/clo.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name">1 Day</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+                                                         <div class="locations-city">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/l.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Lahore </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5 pl-5">
+                                                              <img src="img/profile-img/r.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Islamabad </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                  
+                                                        </div>
+                                                        <div class="d-flex justify-content-around">
+                                                          <div class="sub-menu">
+                                                            <img src="img/Group 318.png">
+                                                            <span class="menu-title">Accommodation</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/icons/Outline.png">
+                                                            <span class="menu-title">Transports</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Outline.png">
+                                                            <span class="menu-title">Fisrt Aid</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6668.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6681.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                         
+                                                         
+                                                        </div>
+                                          
+                                          </div>
+                                     
+                                 
+                                        <div class="media-body-rates parallelogram m-2  pl-4">
+                                            <div class="rates-heading text-right mr-3"> Rs. <span class="rate">2,250</span>
+                                            <p>Per person</p>
+                                            <a href="" class="btn btn-detail mt-3">VIEW DETAILS</a>
+                                            <div class="icons-arae mt-2">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                
+                                                <span class="view-promo mr-3 ml-3" >View Promo</span>
+                                                <i class="fa fa-share" aria-hidden="true"></i>
+
+                                            
+                                            </div>
+                                           
+                                      </div>
+                                        
+                                  </div>
+                              </div>
+                           
+                          
+                            </div>
+                            
+                          </div>   
+                          </div> 
+                  </div>
+                  </div>
+              
+                      <div class=" col-md-1">
+                        <div class="trash-icon">
+                            <i class="fa fa-trash " aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                   </div>       
+             
+                  <div class="row">
+                  <div class="col-md-10">
+                    <div class="main-card shadow  mb-5  rounded">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                 <div class="">
+                                  <div class="d-flex justify-content-between">
+                                      <div class="img">
+                                        <a href="#" class="">
+                                            <img src="img/profile-img/D.png" class="media-object media-object-image m-2" alt="Sample Image">
+                                        </a>
+                                     
+                                        </div>
+                                      
+                                   
+                                        <div class="media-body">
+                                            <h4 class="media-heading mt-3">Faisal Mosque Tour for 10 Peoples</h4>
+                                            <div class="media">
+                                                <img src="img/profile-img/Outline.png" class="host-img mr-1" alt="...">
+                                                <div class="media-body">
+                                                  <span class="host-name">Host: Usman Farrukh</p>
+                                                   
+                                                </div>
+                                              </div>
+                                              <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                         <span>4.5</span>
+                                            
+                                                         <div class="locations-time">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/cc.png" class="host-img mr-2" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-2">September <span>25th,</span> 2020</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5">
+                                                              <img src="img/profile-img/clo.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name">1 Day</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+                                                         <div class="locations-city">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/l.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Lahore </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5 pl-5">
+                                                              <img src="img/profile-img/r.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Islamabad </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                  
+                                                        </div>
+                                                        <div class="d-flex justify-content-around">
+                                                          <div class="sub-menu">
+                                                            <img src="img/Group 318.png">
+                                                            <span class="menu-title">Accommodation</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/icons/Outline.png">
+                                                            <span class="menu-title">Transports</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Outline.png">
+                                                            <span class="menu-title">Fisrt Aid</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6668.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6681.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                         
+                                                         
+                                                        </div>
+                                          
+                                          </div>
+                                     
+                                 
+                                        <div class="media-body-rates parallelogram m-2  pl-4">
+                                            <div class="rates-heading text-right mr-3"> Rs. <span class="rate">2,250</span>
+                                            <p>Per person</p>
+                                            <a href="" class="btn btn-detail mt-3">VIEW DETAILS</a>
+                                            <div class="icons-arae mt-2">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                
+                                                <span class="view-promo mr-3 ml-3" >View Promo</span>
+                                                <i class="fa fa-share" aria-hidden="true"></i>
+
+                                            
+                                            </div>
+                                           
+                                      </div>
+                                        
+                                  </div>
+                              </div>
+                           
+                          
+                            </div>
+                            
+                          </div>   
+                          </div> 
+                  </div>
+                  </div>
+              
+                      <div class=" col-md-1">
+                        <div class="trash-icon">
+                            <i class="fa fa-trash " aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                   </div>       
+                  <div class="row">
+                  <div class="col-md-10">
+                    <div class="main-card shadow  mb-5  rounded">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                 <div class="">
+                                  <div class="d-flex justify-content-between">
+                                      <div class="img">
+                                        <a href="#" class="">
+                                            <img src="img/profile-img/D.png" class="media-object media-object-image m-2" alt="Sample Image">
+                                        </a>
+                                     
+                                        </div>
+                                      
+                                   
+                                        <div class="media-body">
+                                            <h4 class="media-heading mt-3">Faisal Mosque Tour for 10 Peoples</h4>
+                                            <div class="media">
+                                                <img src="img/profile-img/Outline.png" class="host-img mr-1" alt="...">
+                                                <div class="media-body">
+                                                  <span class="host-name">Host: Usman Farrukh</p>
+                                                   
+                                                </div>
+                                              </div>
+                                              <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                         <span>4.5</span>
+                                            
+                                                         <div class="locations-time">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/cc.png" class="host-img mr-2" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-2">September <span>25th,</span> 2020</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5">
+                                                              <img src="img/profile-img/clo.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name">1 Day</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+                                                         <div class="locations-city">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/l.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Lahore </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5 pl-5">
+                                                              <img src="img/profile-img/r.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Islamabad </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                  
+                                                        </div>
+                                                        <div class="d-flex justify-content-around">
+                                                          <div class="sub-menu">
+                                                            <img src="img/Group 318.png">
+                                                            <span class="menu-title">Accommodation</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/icons/Outline.png">
+                                                            <span class="menu-title">Transports</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Outline.png">
+                                                            <span class="menu-title">Fisrt Aid</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6668.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6681.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                         
+                                                         
+                                                        </div>
+                                          
+                                          </div>
+                                     
+                                 
+                                        <div class="media-body-rates parallelogram m-2  pl-4">
+                                            <div class="rates-heading text-right mr-3"> Rs. <span class="rate">2,250</span>
+                                            <p>Per person</p>
+                                            <a href="" class="btn btn-detail mt-3">VIEW DETAILS</a>
+                                            <div class="icons-arae mt-2">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                
+                                                <span class="view-promo mr-3 ml-3" >View Promo</span>
+                                                <i class="fa fa-share" aria-hidden="true"></i>
+
+                                            
+                                            </div>
+                                           
+                                      </div>
+                                        
+                                  </div>
+                              </div>
+                           
+                          
+                            </div>
+                            
+                          </div>   
+                          </div> 
+                  </div>
+                  </div>
+              
+                      <div class=" col-md-1">
+                        <div class="trash-icon">
+                            <i class="fa fa-trash " aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                   </div>       
+                  <div class="row">
+                  <div class="col-md-10">
+                    <div class="main-card shadow  mb-5  rounded">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                 <div class="">
+                                  <div class="d-flex justify-content-between">
+                                      <div class="img">
+                                        <a href="#" class="">
+                                            <img src="img/profile-img/D.png" class="media-object media-object-image m-2" alt="Sample Image">
+                                        </a>
+                                     
+                                        </div>
+                                      
+                                   
+                                        <div class="media-body">
+                                            <h4 class="media-heading mt-3">Faisal Mosque Tour for 10 Peoples</h4>
+                                            <div class="media">
+                                                <img src="img/profile-img/Outline.png" class="host-img mr-1" alt="...">
+                                                <div class="media-body">
+                                                  <span class="host-name">Host: Usman Farrukh</p>
+                                                   
+                                                </div>
+                                              </div>
+                                              <div class="stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                         <span>4.5</span>
+                                            
+                                                         <div class="locations-time">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/cc.png" class="host-img mr-2" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-2">September <span>25th,</span> 2020</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5">
+                                                              <img src="img/profile-img/clo.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name">1 Day</div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+                                                         <div class="locations-city">
+                                                          <div class="media">
+                                                              <img src="img/profile-img/l.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Lahore </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                          <div class="media ml-5 mr-5 pl-5">
+                                                              <img src="img/profile-img/r.png" class="host-img mr-1" alt="...">
+                                                              <div class="media-body">
+                                                                <div class="host-name mt-1">From  <span> Islamabad </span></div>
+                                                                 
+                                                              </div>
+                                                            </div>
+                                                      </div>
+
+                                                  
+                                                        </div>
+                                                        <div class="d-flex justify-content-around">
+                                                          <div class="sub-menu">
+                                                            <img src="img/Group 318.png">
+                                                            <span class="menu-title">Accommodation</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/icons/Outline.png">
+                                                            <span class="menu-title">Transports</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Outline.png">
+                                                            <span class="menu-title">Fisrt Aid</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6668.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                          <div class="sub-menu">
+                                                            <img src="img/Path 6681.png">
+                                                            <span class="menu-title">Meals</span>
+                                                          </div>
+                                                         
+                                                         
+                                                        </div>
+                                          
+                                          </div>
+                                     
+                                 
+                                        <div class="media-body-rates parallelogram m-2  pl-4">
+                                            <div class="rates-heading text-right mr-3"> Rs. <span class="rate">2,250</span>
+                                            <p>Per person</p>
+                                            <a href="" class="btn btn-detail mt-3">VIEW DETAILS</a>
+                                            <div class="icons-arae mt-2">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                
+                                                <span class="view-promo mr-3 ml-3" >View Promo</span>
+                                                <i class="fa fa-share" aria-hidden="true"></i>
+
+                                            
+                                            </div>
+                                           
+                                      </div>
+                                        
+                                  </div>
+                              </div>
+                           
+                          
+                            </div>
+                            
+                          </div>   
+                          </div> 
+                  </div>
+                  </div>
+              
+                      <div class=" col-md-1">
+                        <div class="trash-icon">
+                            <i class="fa fa-trash " aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                   </div>       
+                </div>  
+          </div>
+            
+
+    
+      </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+        $(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+});
+      </script>  
+</body>
+</html>

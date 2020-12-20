@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <title>Trip Jero</title>
+  </head>
+  <body>
+    
+<!-- -----------------------------navbar------------------ -->
+   
+         <nav class="navbar navbar-expand-lg navbar-custom-bg bg-sidebar ">
+          <div class="navbar-left-area">
+            <span class="navbar-left ">
+        <a href="#">      <i class="fa fa-twitter " aria-hidden="true"></i></a>
+        <a href="#">              <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-facebook pl-2 pr-2" aria-hidden="true"></i>
+        </a>
+
+
+
+
+              <img class="ml-2" src="img/Group 3.png" alt="">
+              </span>
+          </div>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="input-area">
+        
+            <input type="text" id="date" class="form-control my-icon" placeholder="Enter Destination for your Trip">
+            
+  
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PKR
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ERO</a>
+                <a class="dropdown-item" href="#">INR</a>
+                <a class="dropdown-item" href="#">USD</a>
+              
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TRIPS </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">DEALS </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">DESTINATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OPERATORS</a>
+            </li>
+          </ul>
+        
+        </div>
+        <div class="navbar-right-area">
+               <a href="#!" class="signup-btn">SIGNUP</a>
+               <a href="#!" class="login-btn">LOGIN</a>
+          </div>
+      </nav>
+
+
+<!-- -----------------------------navbar------------------ -->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/rangeslider.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    $(document).ready(function() {
+$('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+$('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+});
+
+
+
+
+
+$(window).on("load", function(){ 
+var range = $("#range").attr("value");
+$("#demo").html(range);
+$(".slide1").css("width", "50%");
+$(document).on('input change', '#range', function() {
+$('#demo').html( $(this).val() );
+var slideWidth = $(this).val() * 100 / 50000;
+
+$(".slide1").css("width", slideWidth + "%");
+});
+});
+$(window).on("load", function(){ 
+var range = $("#range1").attr("value");
+$("#demo1").html(range);
+$(".slide1").css("width", "50%");
+$(document).on('input change', '#range1', function() {
+$('#demo1').html( $(this).val() );
+var slideWidth = $(this).val() * 100 / 50000;
+
+$(".slide1").css("width", slideWidth + "%");
+});
+});
+$(window).on("load", function(){ 
+var range = $("#range2").attr("value");
+$("#demo2").html(range);
+$(".slide1").css("width", "50%");
+$(document).on('input change', '#range2', function() {
+$('#demo2').html( $(this).val() );
+var slideWidth = $(this).val() * 100 / 50000;
+
+$(".slide1").css("width", slideWidth + "%");
+});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</script>  
+</body>
+</html>
