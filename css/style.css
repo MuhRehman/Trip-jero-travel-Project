@@ -16,7 +16,9 @@
     font-weight:300;
 
   }
-
+body {
+  background-color: #000;
+}
   .carousel-indicators .active {
     background-color: #1095B2;
 }
@@ -118,7 +120,7 @@ padding: 2px !important;
 .navbar-right img {
     height: 30px;
     top:-2px;
-       left: 180px;
+    left: 180px;
    
     }
     .navbar-right {
@@ -148,6 +150,7 @@ padding: 2px !important;
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
 .input-group-append .search-icon {
   padding: 6px;
   padding-left: 12px;
@@ -781,7 +784,7 @@ font-weight: 500;
   padding: 6px 12px;
   border-radius: 45px;
   color: white;
-
+  margin-right: auto;
   
 }
 .login-btn {
@@ -789,13 +792,263 @@ font-weight: 500;
   padding: 6px 12px;
   border-radius: 45px;
   color: white;
+  margin-right: auto;
+}
+
+
+.bg-image {
+ 
+
+  height: 100vh; /* You must set a specified height */
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/bg-images/olga-vel-I4HvFMgzj2Q-unsplash.png);
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+input::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+.login-form {
+  background-color: white;
+}
+
+.login-form-2 h3 {
+  font-size: 30px;
+}
+
+.login-form-12 .form-header span .fa {
+  color: rgb(53, 51, 51);
+  font-size: smaller;
+}
+
+.custom-close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  /* opacity: .5; */
+}
+.login-form-1{
+  padding: 9%;
+  background-image: url("../img/bg-images/bg-img1.png");
+  background-repeat: no-repeat;
+ 
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+  text-align: center;
+  /* margin-bottom:12%; */
+  color:#fff;
+}
+.login-form-2{
+  /* padding: 0% 1%; */
+  background: #ffffff;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+  text-align: left;
+  margin-bottom:12%;
+  color: rgb(0, 0, 0);
+}
+.btnSubmit{
+  font-weight: 600;
+  width: 50%;
+  color: #282726;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding:2%;
+}
+.btnForgetPwd{
+  color: rgb(44, 42, 42);
+  font-weight: 300;
+  text-decoration: none;
+}
+.btnForgetPwd:hover{
+  text-decoration:none;
+  /* color:#fff; */
+}
+.signup-form-btn a{
+color: white;
+}
+.signup-form-btn {
+  border: 2px solid white;
+  padding: 12px 42px;
+  color: white;
+  font-size: 25px;
+  font-family: roboto;
+  border-radius: 45px;
+  display: inline;
+  margin-top: 2px;
+}
+.login-form-1 h3 {
+  color: white;
+  font-size: 30px;
+  font-family: roboto
+}
+.btn-login-form {
+  background-color: #11B3E1;
+  color: white;
+  border-radius: 45px;
+  margin-top: 22px;
+  padding: 12px 12px;
+}
+.custom-input-login input::placeholder {
+color:#a7a1a1 !important;
+}
+.custom-input-login input {
+  border: none;
+  border-bottom: 2px solid #7c7b7b;
+}
+.p-viewer {
+  position: relative;
+  margin: -30px 10px;
+  float: right;
+}
+.login-card {
+  padding-top: 100px !important;
+  overflow: hidden;
+}
+.form-header {
+  overflow: hidden;
+  height: 112px;
   
 }
+.fa-eye {
+color:#707070;
+}
+.btn-close span {
+  padding: 33px;
+  border-bottom-left-radius: 70px;
+  border: 0.4px solid rgb(218, 213, 213);
+  box-shadow: 5px 2px 32px #888888;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.policy-text {
+  font-size: 15px;
+  color: #282726;
+  font-family: roboto;
+}
 /* ----------------------------------------Login-page-styling */
+/* ----------------------------------------SIGN-up-page-styling */
+.btn-Reguister-form {
+  background-color: #F6AC25;
+  color: white;
+  border-radius: 45px;
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 12px 12px;
+}
+.btn-forgot-form {
+  background-color: #11B3E1;
+  color: white;
+  border-radius: 45px;
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 12px 12px;
+}
+.signup-form{
+
+  background-image: url("../img/bg-images/ss.png");
+  background-size: 600px 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.create-text-box {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+
+}
+.skip-btn {
+  border: 2px solid white;
+  padding: 12px 72px;
+  color: white;
+  font-size: 25px;
+  font-family: roboto;
+  border-radius: 45px;
+  display: inline;
+  margin-top: 2px;
+}
+/* ----------------------------------------SIGN-up-page-styling */
+/* ----------------------------------------Welcome-page-styling */
+.navbar-right-area-btn {
+  background-color: white;
+  padding: 14px 12px 18px 13px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  width: 600px;
+  /* width: 100%; */
+}
+.welcome-bg-image {
+ 
+   background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/bg-images/olga-vel-I4HvFMgzj2Q-unsplash.png);
+
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.login-welcome {
+
+}
+.login-welcome {
+  background-image: url(../img/s/aa.png);
+ max-width: 1000px;
+ text-align: center;
+  height: 700px;
+  margin: auto;
+  border: 1px solid transparent;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.login-welcome h3 {
+ font-size: 39px;
+ color: white;
+ font-weight:400;
+}
+.blue-text {
+color: #11B3E1;
+}
+.orange-text {
+  color: #F6AC25;
+}
+.login-welcome p {
+  font-family: roboto;
+  color: white;
+  font-size: 30px;
+}
+.text-area {
+  margin-top: 164px;
+  margin-bottom: 164px;
+}
+.welcome-card {
+  padding-top: 5%;
+;
+}
+/* ----------------------------------------Welcome-page-styling */
+.mobile-d-none {
+  /* display: none; */
+}
+.display-desktop {
+  display: none;
+}
 
 
-
-
+.sidebar-img img {
+  width: 100%;
+}
 
 
 @media (min-width: 768px) {
@@ -821,7 +1074,68 @@ font-weight: 500;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+.mobile-d-none {
+  display: none;
+}
+.badge-custom {
+ margin-top: 12px !important;
+ margin-bottom: 22px !important;
+}
+.icons-arae {
+  display: none;
+}
+.parallelogram {
 
+  border-radius: 10px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn-detail {
+  background-color: #F4AF26;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.locations-time {
+  display: none;
+}
+.locations-city {
+  display: none;
+}
+.filters-bar {
+padding-top: 22px;
+padding-bottom: 32px;
+  color: white;
+}
+.display-desktop {
+  display: block;
+}
+.bar-icon2 {
+  width: 22px;
+  margin-top: -15px;
+  margin-left: 6px;
+}
+.status-item {
+
+align-items: center;
+
+margin: 10px auto;
+
+}
+.status-item-1 {
+  margin-bottom: 32px;
+}
+.mt-sidebar {
+  margin-top: 12px;
+}
+.price-text {
+  padding-top: 112px;
+}
+.range-label {
+  margin-top: 12px;
+}
+.margin-top {
+  margin-top: 25px;
+}
   .card-wrapper {
     display: block;
   }
@@ -869,12 +1183,15 @@ button:focus {
   padding: 12px;
 }
 .sidebar-img img {
-  width: 380px;
+  width: 350px;
   border-radius: 15px;
   /* border: 1px solid red; */
 }
 .mt-sidebar {
-  margin-top: 1px !important;
+  margin-top: 21px !important;
+}
+.mt-sidebar-1 {
+  margin-bottom: 2px;
 }
 }
 
@@ -896,7 +1213,7 @@ button:focus {
   display: block;
 }
 .sidebar-img img {
-  width: 142px;
+  width: 100%;
 
 }
 }
@@ -914,9 +1231,9 @@ button:focus {
   .navbar-right-area {
     background-color: white;
 /* border: 2px solid red ; */
-padding: 14px 12px 14px 13px; 
-border-top-left-radius :25px;
-border-bottom-left-radius :25px;
+padding: 8px 12px 8px 13px; 
+border-top-left-radius :35px;
+border-bottom-left-radius :35px;
 width: 800px;
 width: 100%;
 display: flex;
@@ -943,13 +1260,21 @@ display: flex;
   } */
 }
 @media only screen and (min-width: 1400px) {
-
+  .navbar-right-area-btn {
+    background-color: white;
+    /* border: 2px solid red; */
+    padding:15px 12px 15px 13px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 600px;
+    /* width: 100%; */
+}
   .navbar-right-area {
     background-color: white;
 /* border: 2px solid red ; */
-padding: 14px 12px 14px 13px; 
-border-top-left-radius :25px;
-border-bottom-left-radius :25px;
+padding: 8px 12px 8px 13px; 
+border-top-left-radius :35px;
+border-bottom-left-radius :35px;
 width: 600px;
 /* width: 100%; */
 }
