@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <title>Trip Jero</title>
+  </head>
+  <body>
+    
+<!-- -----------------------------navbar------------------ -->
+   
+         <nav class="navbar navbar-expand-lg navbar-custom-bg bg-sidebar ">
+          <div class="navbar-left-area">
+            <span class="navbar-left ">
+        <a href="#">      <i class="fa fa-twitter " aria-hidden="true"></i></a>
+        <a href="#">              <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="#">              <i class="fa fa-facebook pl-2 pr-2" aria-hidden="true"></i>
+        </a>
+
+
+
+
+              <img class="ml-2" src="img/Group 3.png" alt="">
+              </span>
+          </div>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="input-area">
+        
+            <input type="text" id="date" class="form-control my-icon" placeholder="Enter Destination for your Trip">
+            
+       
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-1">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PKR
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ERO</a>
+                <a class="dropdown-item" href="#">INR</a>
+                <a class="dropdown-item" href="#">USD</a>
+              
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="TRIPS.html">TRIPS </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="DEALS.html">DEALS </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">DESTINATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="OPERATORS.html">OPERATORS</a>
+            </li>
+          </ul>
+        
+        </div>
+        <div class="navbar-right-area">
+            <span class="navbar-right">
+                MUDDASSAR HASEEB <img src="img/Group 739.png" alt="">
+              </span>
+          </div>
+      </nav>
+
+
+<!-- -----------------------------navbar------------------ -->
+
+
+<!-- ------------------------banner------------------ -->
+<div class="deals-banner">
+    <div class="container-fluid text-center">
+      <div class="banner-deals-text">
+          <h1>Explore DESTINATIONS</h1>
+       
+        </div>
+    </div>
+  </div>
+<!-- ------------------------banner------------------ -->
+
+
+
+<!-- -----------------------------Status-Bar------------------ -->
+
+
+<section class=" bar-area ">
+  <div class="container-fluid pt-4 pb-3">
+  <div class="row ">
+    <div class="col-md-2 col-12 status-item"  href="#paragraph1">
+      <div class="media">
+        <img class="align-self-center bar-icon" src="img/slider/ss.svg" alt="">
+        <div class="media-body-text">
+          <p class="">FILTER BY FROM</p>
+          <select id="inputState" class="form-control-custom">
+            <option selected>ANY</option>
+            <option>ANY</option>
+            <option>ANY</option>
+            <option>ANY</option>
+            <option>ANY</option>
+          </select>
+       </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-12 status-item" href="#paragraph2"> 
+        <div class="media">
+      <img class="align-self-center bar-icon2" src="img/slider/Outline.svg" alt="">
+      <div class="media-body-text">
+        <p class=""> FILTER BY DESTINATION</p>
+        <select id="inputState" class="form-control-custom">
+          <option selected>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+        </select>
+     </div>
+    </div></div>
+    <div class="col-md-2 col-12 status-item" href="#paragraph3"> 
+        <div class="media">
+      <img class="align-self-center bar-icon" src="img/slider/baseline-directions_bike-24px.svg" alt="">
+      <div class="media-body-text">
+        <p class=""> FILTER BY CATAGORY</p>
+        <select id="inputState" class="form-control-custom">
+          <option selected>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+          <option>ANY</option>
+        </select>
+     </div>
+    </div>
+  </div>
+
+    <div class="col-md-2" href="#paragraph4">
+      
+      <div class="margin-top">
+      <label class="range-label" for="">Trip Duration        <span id="demo">20</span><span class="ml-1">Days</span> </label>
+      
+      <input id="range" type="range" min="1" max="20" >
+      </div>
+     
+  
+  </div>
+
+     <div class="col-md-2" href="#paragraph4">
+      <div class="row margin-top mb-2 ml-1 slider-labels">
+        <div class="col-xs-6 caption">
+          <span class="price-text">Price</span> <span class="amount-area" id="slider-range-value11"></span>
+        </div>
+        <div class="col-xs-6 text-right caption">
+          <span class="price-text ml-1"> - </span>  <span class="amount-area ml-1"  id="slider-range-value22"></span>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="slider-range1"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <input type="hidden" name="min-value" value="">
+
+              
+              <input type="hidden" name="max-value" value="">
+            </form>
+          </div>
+        </div>
+        
+  
+       
+      </div>
+
+    <div class="col-md-2 status-item-1" href="#paragraph4">
+      <div class="row margin-top mb-2 ml-1 slider-labels">
+        <div class="col-xs-6 caption">
+          <span class="price-text">Price</span> <span class="amount-area" id="slider-range-value1"></span>
+        </div>
+        <div class="col-xs-6 text-right caption">
+          <span class="price-text ml-1"> - </span>  <span class="amount-area ml-1"  id="slider-range-value2"></span>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="slider-range"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <input type="hidden" name="min-value" value="">
+
+              
+              <input type="hidden" name="max-value" value="">
+            </form>
+          </div>
+        </div>
+        
+  
+       
+      </div>
+     
+     
+  
+  </div>
+</div>
+
+  
+</section>
+
+  
+<!-- -----------------------------Status-Bar------------------ -->
+
+
+
+
+
+                           
+                           
+                          
+                
+   <div class="container-fluid">
+    <div class="row justify-content-md-center">
+  
+        <div class="col-md-5">
+            <div class="input-area mt-4">
+            
+                <input type="text" id="date" class="form-control my-icon-second" placeholder="Search here to explore trips">
+                
+           
+            </div>
+       
+          </div>
+    
+    </div>
+
+
+    <div class="top-trending-cards">
+
+            <div class="top-title ml-5">
+                TOP TRENDINGS
+            </div>
+        <div class="row mt-4">
+            
+       
+
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/1.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">PESHAWAR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/2.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">LAHORE</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/3.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">NARAN</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/4.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KASHMIR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/5.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KARACHI</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+          </div>
+          </div>
+    <div class="top-trending-cards mt-4">
+
+            <div class="top-title-location ml-5">
+              LOCATIONS
+            </div>
+        <div class="row mt-4">
+            
+       
+
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/11.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">GUADER</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/12.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">MUREE</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/13.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KAGAN</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/14.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KACHIKOTI</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                 
+                  <img class="trending-img-card" src="img/trending-cards/15.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">PESHAWAR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+          </div>
+        <div class="row mt-4">
+            
+       
+
+                <div class="card-wrapper m-auto">
+             
+                  <img class="trending-img-card" src="img/trending-cards/16.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">LOHORE</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/17.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">CHANGA MANGA</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                 
+                  <img class="trending-img-card" src="img/trending-cards/18.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KASHMIR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                 
+                  <img class="trending-img-card" src="img/trending-cards/19.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KARACHI </h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/20.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">PESHAWAR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+          </div>
+        <div class="row mt-4">
+            
+       
+
+                <div class="card-wrapper m-auto">
+               
+                  <img class="trending-img-card" src="img/trending-cards/21.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">RAVI</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/22.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">NARAN</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+               
+                  <img class="trending-img-card" src="img/trending-cards/23.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KASHMIR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/24.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">GILGIT</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                
+                  <img class="trending-img-card" src="img/trending-cards/25.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">PESHAWAR</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+          </div>
+        <div class="row mt-4">
+            
+       
+
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/26.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">LAHORE</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+
+                <div class="card-wrapper m-auto">
+                 
+                  <img class="trending-img-card" src="img/trending-cards/27.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">NARAN</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+              
+                  <img class="trending-img-card" src="img/trending-cards/28.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">MUREE</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+                  <div class="featured-tag4">
+                    <span class="left-corner4"></span>
+                    <span class="right-corner4"></span>
+                    <div class="featured4">
+                      <p>Featured</p>
+                    </div>
+                  </div>
+                  <img class="trending-img-card" src="img/trending-cards/29.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">KARACHI</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+                <div class="card-wrapper m-auto">
+               
+                  <img class="trending-img-card" src="img/trending-cards/30.png" alt="" />
+                  <div class="card-img-overlay text-white pt-4 d-flex flex-column justify-content-center">
+                    <h4 class="card-title custom-card-title">QUETA</h4>
+                      <a href="#!" class="btn btn-see-trips">SEE TRIPS</a>
+                      
+                  </div>
+                </div>
+          </div>
+          </div>
+    </div>
+
+   </div>
+
+
+
+
+   <div class="explore-more text-center mt-5 mb-5">
+    <a href="#!" class="explore-btn ">
+      EXPLORE MORE
+    </a>
+  </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-dardk pt-1">
+
+
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">DESTINATIONS</h6>
+        <hr class="deep-purple accent-2 mb-1 mt-0 d-inline-block mx-auto">
+        
+          <a href="">Tour Packages Kashmir </a><br>
+        
+       
+      
+          <a href="#!">Tour Packages Kashmir </a><br>
+      
+          <a href="#!">  Tour Packages Swat </a><br>
+            <a href="#!"> Tour Packages Skardu </a><br>
+              <a href="#!"> Tour Packages Islamabad </a><br>
+                <a href="#!"> Tour Packages Fairy Meadows </a><br>
+                  <a href="#!"> Tour Packages Chitral / Kalash </a><br>
+                    <a href="#!">Tour Packages Balochistan </a><br>
+                      <a href="#!"> Tour Packages Naran </a><br>
+                        <a href="#!"> Tour Packages Sindh </a><br>
+                          <a href="#!"> Tour Packages Hunza & Nagar </a>
+       
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">CATAGORIES</h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" >
+              
+        <a href="">Tour Packages Kashmir </a><br>
+        
+       
+      
+        <a href="#!">Tour Packages Kashmir </a><br>
+    
+        <a href="#!">  Tour Packages Swat </a><br>
+          <a href="#!"> Tour Packages Skardu </a><br>
+            <a href="#!"> Tour Packages Islamabad </a><br>
+              <a href="#!"> Tour Packages Fairy Meadows </a><br>
+                <a href="#!"> Tour Packages Chitral / Kalash </a><br>
+                  <a href="#!">Tour Packages Balochistan </a><br>
+                    <a href="#!"> Tour Packages Naran </a><br>
+                      <a href="#!"> Tour Packages Sindh </a><br>
+                        <a href="#!"> Tour Packages Hunza & Nagar </a>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">PACKAGES</h6>
+        <hr class="deep-purple accent-2 mb-2 mt-0 d-inline-block mx-auto" >
+              
+        <a href="">Tour Packages Kashmir </a><br>
+        
+       
+      
+        <a href="#!">Tour Packages Kashmir </a><br>
+    
+        <a href="#!">  Tour Packages Swat </a><br>
+          <a href="#!"> Tour Packages Skardu </a><br>
+            <a href="#!"> Tour Packages Islamabad </a><br>
+              <a href="#!"> Tour Packages Fairy Meadows </a><br>
+                <a href="#!"> Tour Packages Chitral / Kalash </a><br>
+                  <a href="#!">Tour Packages Balochistan </a><br>
+                    <a href="#!"> Tour Packages Naran </a><br>
+                      <a href="#!"> Tour Packages Sindh </a><br>
+                        <a href="#!"> Tour Packages Hunza & Nagar </a>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">EXTRA LINKS</h6>
+        <hr class="deep-purple accent-2 mb-2   mt-0 d-inline-block mx-auto" >
+       
+        <a href="#!">About Us </a><br>
+    
+        <a href="#!">  Contact Us </a><br>
+          <a href="#!"> FAQs </a><br>
+ 
+    <h6 class="text-uppercase font-weight-bold mt-3">CLIENT</h6>
+        
+    <a href="#!"><img src="img/slider/a1.png" alt=""></a>
+    <a href="#!"><img src="img/slider/a2.png" alt=""></a>
+    <h6 class="text-uppercase font-weight-bold mt-3">OPERATOR</h6>
+        
+    <a href="#!"><img src="img/slider/a1.png" alt=""></a>
+    <a href="#!"><img src="img/slider/a2.png" alt=""></a>
+  
+      <div class="social-icons mt-4 ">
+  <a href="#">      <i class="fa fa-twitter p-1 " aria-hidden="true"></i></a>
+  <a href="#">              <i class="fa fa-snapchat-ghost p-1" aria-hidden="true"></i>
+  </a>
+  <a href="#">              <i class="fa fa-whatsapp p-1" aria-hidden="true"></i>
+  </a>
+  <a href="#">              <i class="fa fa-facebook p-1 pl-2 pr-2" aria-hidden="true"></i>
+  </a>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/rangeslider.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+        $(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+});
+
+
+
+   
+   
+$(window).on("load", function(){ 
+  var range = $("#range").attr("value");
+  $("#demo").html(range);
+  $(".slide1").css("width", "50%");
+  $(document).on('input change', '#range', function() {
+    $('#demo').html( $(this).val() );
+    var slideWidth = $(this).val() * 100 / 50000;
+    
+    $(".slide1").css("width", slideWidth + "%");
+});
+});
+$(window).on("load", function(){ 
+  var range = $("#range1").attr("value");
+  $("#demo1").html(range);
+  $(".slide1").css("width", "50%");
+  $(document).on('input change', '#range1', function() {
+    $('#demo1').html( $(this).val() );
+    var slideWidth = $(this).val() * 100 / 50000;
+    
+    $(".slide1").css("width", slideWidth + "%");
+});
+});
+$(window).on("load", function(){ 
+  var range = $("#range2").attr("value");
+  $("#demo2").html(range);
+  $(".slide1").css("width", "50%");
+  $(document).on('input change', '#range2', function() {
+    $('#demo2').html( $(this).val() );
+    var slideWidth = $(this).val() * 100 / 50000;
+    
+    $(".slide1").css("width", slideWidth + "%");
+});
+});
+
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+
+  </script>
+</script>  
+</body>
+</html>

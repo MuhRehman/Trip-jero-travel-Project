@@ -73,9 +73,11 @@
     appearance: none;
     width: 6px;
     height: 6px;
-    background: rgb(16, 167, 255);
+    background:#F6AC25;
+    
     border-radius: 45px;
-    border: 4px solid #F6AC25;
+
+    border: 4px solid rgb(16, 167, 255);
     cursor: pointer;
     box-shadow: 1px 3px  1px  1px gray;
   }
