@@ -1542,7 +1542,7 @@ div.absolute {
 .card-title {
   font-family: roboto;
 }
-.card-img-overlay {
+.card-img-overlay-custom-oper {
   position: absolute;
   top: 91px;
   text-align: center;
@@ -1912,13 +1912,16 @@ font-size: 2rem;
 /* ----------------------------------------Overview-trips-page-styling */
 .overview-banner {
   background-image:url(../img/banner/overview.png);
-  height: 310px;
+  /* height: 310px; */
  
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   position: relative;
 }
-
+.banner-inner-text {
+  padding-top: 43px;
+}
 nav > .nav.nav-tabs{
 
   border: none;
@@ -1958,7 +1961,7 @@ nav > div a.nav-item.nav-link.active
   background-color:#11B3E1;
 }
 .tab-wrapper {
-  width: 990px;
+  max-width: 990px;
   margin-left: 142px;
 }
 .nav-fill .nav-item {
@@ -1966,13 +1969,11 @@ nav > div a.nav-item.nav-link.active
   flex: none !important;
   /* text-align: center; */
 }
-.inner-card {
-background-color: red;
-border: 2px solid red;  
-}
+
 .overview {
   background-color: #F3F3F3;
   padding: 44px;
+  border-radius: 25px;
 }
 
 .css-tooltip {
@@ -2121,9 +2122,158 @@ font-size: 20px;
   font-size: 20px;
   color: #11B3E1;
 }
+.table-text img {
+  height: 22px;
+  margin-top: -6px;
+}
 .table-text-ans {
-  color: red;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.destination-text img {
+    height: 22px;
+    margin-top: -6px;
+}
+.destination-text {
+  color: #F4AF26;
+}
+.rating-content {
+  padding: 24px;
+}
+.table-content {
+margin-top: 23px;
+margin-bottom: 23px;
+}
+.banner-inner-title {
+  font-family: roboto;
+font-weight: 800;
+font-size: 31px;
+}
+.banner-inner-content span {
+color: white;
+font-family: roboto;
+font-weight: 500;
+}
+.banner-inner-content {
+  text-align: left;
+  color: white;
+}
+.table-content td,th {
+  width:310px;
+  padding-top: 12px;
+}
+.mt-stars .fa {
+font-size: 25px;
+}
+.mt-stars {
+  margin-top: 1px;
+}
+.user-name h6 {
+  font-size: 23px;
+  font-family: roboto;
+}
+.post-date {
+  font-size: 18px;
+  font-family: roboto;
+  color: #3a3838;
+  font-weight: 300;
+}
+.review-text {
+  background-color: white;
+  padding: 17px 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 3px rgba(92, 89, 89, 0.12), 0 5px 2px rgba(172, 168, 168, 0.24);
+}
+.banner-inner-deals-text {
+  padding-top: 70px;
+}
+.inner-card {
+  }
+  .banner-img-overlay-custom {
+    /* top: 132px; */
+    right: 110px;
+    bottom: 0;
+    left: 0;
+    padding: 0rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+} 
+.banner-img-overlay {
+  position: absolute;
+  top: 9px;
+  text-align: center;
+  margin-top: 1233px;
+  
+}
+.overlay-banner-title {
+  color: #F4AF26;
+  font-weight: 600;
+  font-size: 44px;
+} 
+.per-person {
   font-size: 13px;
+  text-align: right;
+  margin-right: 120px;
+  color: white;
+  font-family: roboto;
+}
+.banner-now-btn {
+  background-color: #F4AF26;
+  font-size: 25px;
+  color: white;
+  padding: 6px 40px;
+    display: inline-block;
+    margin-top: 14px;
+}
+.rs-banner {
+  font-size:34px;
+  
+}
+.rs-banenr-price {
+  margin-right: 33px;
+  font-size: 73px;
+}
+
+
+.featured-tag-banner .featured-banner p {
+font-size: 15px;
+}
+.featured-tag-banner .featured-banner {
+    border-bottom: 25px solid #F4AF26 !important;
+    content: "";
+    height: 10px;
+    position: absolute;
+    color: white;
+    left: -10px;
+    text-align: center;
+    top: 114px;
+    width: 81px;
+    z-index: 2;
+    font-size: 8px;
+    -webkit-box-shadow: 0 4px 0px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 0px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 0px -1px rgba(0, 0, 0, 0.2);
+}
+
+.featured-tag-banner .left-corner-banner {
+    background: #F4AF26 none repeat scroll 0 0;
+    display: inline-block;
+    border-bottom-left-radius: 125px;
+    height: 28px;
+    position: absolute;
+    left: -10px !important;
+    top: 132px;
+    width: 26px;
+    z-index: 0;
+}
+.d-none-mobile {
+  display: block;
 }
 /* ----------------------------------------Overview-trips-page-styling */
 
@@ -2173,6 +2323,27 @@ text-align: center;
 
   margin-left: 70%;
 
+}
+.mt-stars {
+display: none; 
+}
+.table-text {
+  font-size: 10px;
+  color: #11B3E1;
+}
+.destination-text {
+font-size: 6px; 
+}
+.over-heading {
+  margin-left: 0%;
+
+}
+.d-none-mobile {
+  display: none;
+}
+.tab-wrapper {
+  max-width: 990px;
+  margin-left: 2px;
 }
 .filters-btn-bar-second { 
   display: inline;
