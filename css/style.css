@@ -2596,11 +2596,250 @@ padding: 22px;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  position: relative;
+ 
 }
 .payment-banner-inner-text {
-  position: relative;
+ padding-top: 25%;
+}
+.payment-banner-img-overlay-custom {
+  right: 110px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+ border-radius: 25px;
+}
+.pay-card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 210;
   bottom: 0;
+  left: 0;
+  padding: 0;
+  border-radius: calc(2.25rem - 1px);
+}
+.pay-check-status-green {
+  background-color: #008209;
+  margin-left: 5%;
+  padding-bottom: 6px;
+  border-radius: 15px;
+}
+.pay-check-status-green i {
+  font-size: 11px;
+  padding: 8px;
+  color: whitesmoke;
+}
+
+
+
+
+.booking-section > h5 {
+
+font-size: 22px;
+font-family: roboto;
+font-weight: 800;
+}
+.booking-section > p {
+
+font-size: 14px;
+font-family: roboto;
+font-weight: 500;
+color: #000000;
+}
+
+.packages button {
+padding: 12px 72px;
+margin-left: 32px;
+background-color: #11B3E1;
+border: none;
+color: white;
+border-radius: 3px;
+font-weight: 600;
+font-family: roboto;
+}
+.packages h3 {
+  margin-top: 12px;
+  text-transform: uppercase;
+  color: #F4AF26;
+  font-size: 23px;
+  font-family: roboto;
+  font-weight: 600;
+}
+
+.custom-label {
+  text-transform: uppercase;
+  color: #F4AF26;
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: 500;
+  width: 320px;
+}
+
+
+.custom-input {
+  background-color: #EEEEEE;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 15px rgba(0,0,0,0.22);
+}
+.personal-details {
+  background-color: #f5f5f5;
+ border-radius: 15px;
+  padding: 32px;
+}
+.personal-details h3 {
+  text-transform: uppercase;
+  color: #F4AF26;
+}
+.custom-input-detail {
+  padding: 25px;
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px rgba(165, 164, 164, 0.25), 0 3px 15px rgba(148, 144, 144, 0.22);
+}
+.custom-label-detail {
+  text-transform: uppercase;
+  color: #242321;
+  font-family: roboto;
+  font-weight: 800;
+  font-size: 14px;
+}
+.input-start {
+  color: red;
+}
+
+.intl-tel-input .selected-flag {
+  z-index: 4;
+}
+.form-check-input-custom {
+  margin-top: -8px;
+}
+.form-check-input-custom-2 {
+  margin-bottom: 12px;
+}
+.form-check-custom {
+  /* padding-bottom: 15px; */
+  background-color: #FBFBFB;
+}
+.custom-input-details {
+  
+  background-color: #FBFBFB;
+  box-shadow: 0 4px 8px rgba(165, 164, 164, 0.25);
+}
+.checkbox-area {
+  background-color: #FBFBFB;
+  box-shadow: 0 14px 18px rgba(165, 164, 164, 0.25);
+
+
+}
+.btn-input i {
+color: white;
+}
+.btn-input {
+  background-color: #F4AF26;
+}
+.warning-text {
+  font-family: roboto;
+  font-size: 16px;
+  color: #707070;
+}
+
+
+
+
+.payment-method > h5 {
+  font-size: 31px;
+  font-family: roboto;
+  font-weight: 800;
+}
+
+.custom-nav-link {
+  background-color: #FBFBFB;
+  box-shadow: 2px 3px 12px 0px rgba(165, 164, 164, 0.25);
+  color: #242321;
+  padding: 12px 22px;
+  font-family: roboto;
+  font-weight: normal;
+}
+.dashboard-tab {
+  background-color: #f6f6f6;
+  border-radius: 22px;
+  border: none;
+  padding: 32px;
+  text-align: center;
+}
+.tab-space {
+  border: none;
+}
+
+.credit-card input::placeholder {
+  text-align: center;
+}
+.invoice-heading {
+font-size: 33px;
+color: #585858;
+margin-top: 63px;
+}
+.small-text {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: roboto;
+  color: #F4AF26;
+
+}
+.description-box {
+  background-color:#f5f5f5;
+  padding: 12px;
+  border-radius: 5px;
+}
+.description-text {
+  font-size: 13px;
+  color: #F4AF26;
+  font-weight: 800;
+}
+.passengers-box {
+  background-color:#eeeded;
+  padding: 12px;
+  border-radius: 5px;
+}
+.total-box .total-box-text {
+color: white;
+font-weight: bolder;
+}
+.total-box {
+  background-color:#F4AF26;
+  padding: 12px;
+  border-radius: 5px;
+}
+.code-input-box {
+  padding: 0px;
+}
+.btn-apply {
+  background-color: #F4AF26;
+  color: white;
+  display: block;
+  padding: 13px 2px;
+  font-family: 22px;
+  font-weight: bolder;
+}
+.tandC {
+  color: #F4AF26  ;
+}
+.btn-checkout {
+  color: white !important;
+  background-color: #F4AF26;
+  font-size: 2rem;
+  display: block;
+  margin-top: 53px;
+  font-weight: 500;
+}
+.enter-code::placeholder {
+  color: black;
+  font-weight: normal;
+  font-family: roboto;
+}
+.quantity-input-number {
+  width: 10px;
+}
+.input-addOn input {
+width: 80px;
 }
 /* ---------------------------------------Payment-page-styling */
 
@@ -2639,6 +2878,14 @@ padding: 22px;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .custom-nav-link {
+    padding: 12px 10px;
+   
+.checkbox-area {
+margin-top: 12px;
+  
+  
+  } 
 .mobile-d-none {
   display: none;
 }
